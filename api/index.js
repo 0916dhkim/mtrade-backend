@@ -33,17 +33,17 @@ app.get('/api', (req, res) => {
 });
 
 // connect to db
-mongoose.connect(process.env.MONGO_URI)
-        .then(() => {
-                // listen for requests
-                app.listen(process.env.PORT || 4000, () => {
-                        // eslint-disable-next-line no-console
-                        console.log('Connected to db & listening on port', process.env.PORT || 4000);
-                });
-        })
-        .catch((error) => {
-                /* eslint no-console: ["error", { allow: ["warn", "error"] }] */
-                console.error(error);
-        });
+// mongoose.connect(process.env.MONGO_URI)
+//         .then(() => {
+//                 // listen for requests
+//                 app.listen(process.env.PORT || 4000, () => {
+//                         // eslint-disable-next-line no-console
+//                         console.log('Connected to db & listening on port', process.env.PORT || 4000);
+//                 });
+//         })
+//         .catch((error) => {
+//                 /* eslint no-console: ["error", { allow: ["warn", "error"] }] */
+//                 console.error(error);
+//         });
 
 module.exports = app;
