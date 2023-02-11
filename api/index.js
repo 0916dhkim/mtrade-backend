@@ -25,7 +25,7 @@ app.use((req, res, next) => {
 
 // routes
 app.use('/api/user', userRoutes);
-app.use('/api/trades', tradesRoutes);
+// app.use('/api/trades', tradesRoutes);
 
 // Back end is working browser message
 app.get('/api', (req, res) => {
